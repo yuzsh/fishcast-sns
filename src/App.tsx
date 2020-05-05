@@ -10,10 +10,11 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { podium, camera, search, ellipse, square, triangle } from 'ionicons/icons';
+import { podium, camera, search } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
+import Details from './pages/Details';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -34,6 +35,9 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+/* Global CSS */
+import './global.css';
+
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
@@ -41,6 +45,7 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           <Route path="/tab1" component={Tab1} exact={true} />
           <Route path="/tab2" component={Tab2} exact={true} />
+          <Route path="/tab2/details" component={Details} />
           <Route path="/tab3" component={Tab3} />
           <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
         </IonRouterOutlet>
@@ -50,12 +55,12 @@ const App: React.FC = () => (
             <IonLabel>予測</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon icon={search} />
-            <IonLabel>検索</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
             <IonIcon icon={camera} />
             <IonLabel>登録</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab3" href="/tab3">
+            <IonIcon icon={search} />
+            <IonLabel>検索</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
