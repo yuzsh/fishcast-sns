@@ -1,5 +1,7 @@
 {
   "name": "FishcastSns",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "react"
 }
