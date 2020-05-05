@@ -1,6 +1,25 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel, IonList, IonItemDivider, IonButton, IonText, IonGrid, IonRow, IonCol, IonCard } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { 
+    IonContent
+    , IonHeader
+    , IonPage
+    , IonTitle
+    , IonToolbar
+    , IonList
+    , IonButton
+    , IonGrid
+    , IonRow
+    , IonCol
+    , IonCard
+    , IonIcon
+ } from '@ionic/react';
+
+import { 
+    logoGoogle
+    , logoTwitter
+    , mail
+  } from 'ionicons/icons';
+
 import './Login.css';
 
 const RegisterBase: React.FC = () => {
@@ -19,9 +38,18 @@ const RegisterBase: React.FC = () => {
                 <IonCol　size="6">
 					<IonCard class="card_padding">
 					<IonList>
-                    <IonButton expand="block" fill="outline" type="submit" href="/Register" class="ion-text-capitalize card_contents_vmargin">メールアドレスで登録</IonButton>
-                    <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">Googleアカウントで登録</IonButton>
-                    <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">Twitterアカウントで登録</IonButton>
+                    <IonButton expand="block" fill="outline" type="submit" href="/Register" class="ion-text-capitalize card_contents_vmargin">
+                        <IonIcon slot="start" icon={mail} />
+                        メールアドレスで登録
+                    </IonButton>
+                    <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">
+                        <IonIcon slot="start" icon={logoGoogle} />
+                        Googleアカウントで登録
+                    </IonButton>
+                    <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">
+                        <IonIcon slot="start" icon={logoTwitter} />
+                        Twitterアカウントで登録
+                    </IonButton>
 					</IonList>
 					</IonCard>
 				</IonCol>

@@ -1,6 +1,22 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel, IonList, IonItemDivider, IonButton, IonText, IonGrid, IonRow, IonCol, IonCard } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { 
+	IonContent
+	, IonHeader
+	, IonPage
+	, IonTitle
+	, IonToolbar
+	, IonInput
+	, IonItem
+	, IonLabel
+	, IonList
+	, IonButton
+	, IonText
+	, IonGrid
+	, IonRow
+	, IonCol
+	, IonCard
+ } from '@ionic/react';
+
 import './Login.css';
 
 const Register: React.FC = () => {

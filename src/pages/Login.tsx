@@ -1,6 +1,28 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem, IonLabel, IonList, IonItemDivider, IonText, IonButton, IonRouterLink, IonGrid, IonRow, IonCol, IonCard } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { 
+  IonContent
+  , IonHeader
+  , IonPage
+  , IonTitle
+  , IonToolbar
+  , IonInput
+  , IonItem
+  , IonLabel
+  , IonList
+  , IonButton
+  , IonRouterLink
+  , IonGrid
+  , IonRow
+  , IonCol
+  , IonCard
+  , IonIcon 
+} from '@ionic/react';
+
+import { 
+  logoGoogle
+  , logoTwitter 
+} from 'ionicons/icons';
+
 import './Login.css';
 
 const Login: React.FC = () => {
@@ -23,8 +45,14 @@ const Login: React.FC = () => {
           <IonCard class="card_padding">
             <IonList>
               <div>
-                <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">Googleアカウントでログイン</IonButton>
-                <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">Twitterアカウントでログイン</IonButton>
+                <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">
+                  <IonIcon slot="start" icon={logoGoogle} />
+                  Googleアカウントでログイン
+                </IonButton>
+                <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">
+                  <IonIcon slot="start" icon={logoTwitter} />
+                  Twitterアカウントでログイン
+                </IonButton>
               </div>
               <IonItem class="ion-padding-top">
                 <IonLabel position="stacked">
