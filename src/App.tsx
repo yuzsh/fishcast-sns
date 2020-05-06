@@ -10,11 +10,15 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { podium, camera, search } from 'ionicons/icons';
+import { podium, camera, search, personOutline } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Details from './pages/Details';
+import UserMenu from './pages/UserMenu';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import RegisterBase from './pages/RegisterBase';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -47,6 +51,10 @@ const App: React.FC = () => (
           <Route path="/tab2" component={Tab2} exact={true} />
           <Route path="/tab2/details" component={Details} />
           <Route path="/tab3" component={Tab3} />
+          <Route path="/UserMenu" component={UserMenu} />
+          <Route path="/Login" component={Login} />
+          <Route path="/Register" component={Register} />
+          <Route path="/RegisterBase" component={RegisterBase} />
           <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
@@ -61,6 +69,10 @@ const App: React.FC = () => (
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon icon={search} />
             <IonLabel>検索</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="Login" href="/Login">
+            <IonIcon icon={personOutline} />
+            <IonLabel>ログイン</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
