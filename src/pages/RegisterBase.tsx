@@ -34,8 +34,7 @@ const RegisterBase: React.FC = () => {
       <IonContent>
 			<IonGrid>
 				<IonRow class="ion-justify-content-center">
-				<IonCol size="1"></IonCol>
-                <IonCol　size="6">
+                <IonCol size-sm="10" size-md="6">
 					<IonCard class="card_padding">
 					<IonList>
                     <IonButton expand="block" fill="outline" type="submit" href="/Register" class="ion-text-capitalize card_contents_vmargin">
@@ -44,16 +43,15 @@ const RegisterBase: React.FC = () => {
                     </IonButton>
                     <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">
                         <IonIcon slot="start" icon={logoGoogle} />
-                        Googleアカウントで登録
+                        Googleで登録
                     </IonButton>
                     <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">
                         <IonIcon slot="start" icon={logoTwitter} />
-                        Twitterアカウントで登録
+                        Twitterで登録
                     </IonButton>
 					</IonList>
 					</IonCard>
 				</IonCol>
-				<IonCol size="1"></IonCol>
 				</IonRow>
 			</IonGrid>
       </IonContent>

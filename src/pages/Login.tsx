@@ -40,18 +40,17 @@ const Login: React.FC = () => {
       <IonContent>
         <IonGrid>
           <IonRow class="ion-justify-content-center">
-          <IonCol size="1"></IonCol>
-          <IonCol　size="6">
+          <IonCol　size-sm="10" size-md="6">
           <IonCard class="card_padding">
             <IonList>
               <div>
                 <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">
                   <IonIcon slot="start" icon={logoGoogle} />
-                  Googleアカウントでログイン
+                  Googleでログイン
                 </IonButton>
                 <IonButton expand="block" fill="outline" type="submit" class="ion-text-capitalize card_contents_vmargin">
                   <IonIcon slot="start" icon={logoTwitter} />
-                  Twitterアカウントでログイン
+                  Twitterでログイン
                 </IonButton>
               </div>
               <IonItem class="ion-padding-top">
@@ -67,7 +66,7 @@ const Login: React.FC = () => {
                 <IonInput type="password" required value={password} placeholder="Enter your possword" onIonChange={e => setPassword(e.detail.value!)}></IonInput>
               </IonItem>
               <IonButton expand="block" type="submit" class="card_contents_vmargin">ログイン</IonButton>
-              <IonLabel>
+              <IonLabel class="caution_text">
                 パスワードをお忘れの方は<IonRouterLink href="/Login">こちら</IonRouterLink>
               </IonLabel>
             </IonList>
@@ -81,7 +80,6 @@ const Login: React.FC = () => {
 					</IonList>
 					</IonCard>
           </IonCol>
-          <IonCol size="1"></IonCol>
           </IonRow>
         </IonGrid>
       </IonContent>
