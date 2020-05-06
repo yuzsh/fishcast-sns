@@ -10,10 +10,10 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { podium, camera, search, personOutline } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+import { podium, camera, home, personOutline } from 'ionicons/icons';
+import Predict from './pages/Predict';
+import Submit from './pages/Submit';
+import Home from './pages/Home';
 import Details from './pages/Details';
 import UserMenu from './pages/UserMenu';
 import Login from './pages/Login';
@@ -47,28 +47,28 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route path="/tab1" component={Tab1} exact={true} />
-          <Route path="/tab2" component={Tab2} exact={true} />
-          <Route path="/tab2/details" component={Details} />
-          <Route path="/tab3" component={Tab3} />
+          <Route path="/Predict" component={Predict} exact={true} />
+          <Route path="/Submit" component={Submit} exact={true} />
+          <Route path="/Submit/details" component={Details} />
+          <Route path="/Home" component={Home} />
           <Route path="/UserMenu" component={UserMenu} />
           <Route path="/Login" component={Login} />
           <Route path="/Register" component={Register} />
           <Route path="/RegisterBase" component={RegisterBase} />
-          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+          <Route path="/" render={() => <Redirect to="/Predict" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="Home" href="/Home">
+            <IonIcon icon={home} />
+            <IonLabel>検索</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="Predict" href="/Predict">
             <IonIcon icon={podium} />
             <IonLabel>予測</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="Submit" href="/Submit">
             <IonIcon icon={camera} />
             <IonLabel>登録</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={search} />
-            <IonLabel>検索</IonLabel>
           </IonTabButton>
           <IonTabButton tab="Login" href="/Login">
             <IonIcon icon={personOutline} />

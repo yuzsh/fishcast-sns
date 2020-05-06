@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "photo-gallery-capacitor-react",
+  "appName": "fishcast-sns",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
