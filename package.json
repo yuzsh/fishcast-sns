@@ -48,7 +48,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "^2.0.1",
+    "@capacitor/cli": "2.0.2",
+    "@ionic/lab": "3.1.4",
     "react-scripts": "3.4.1"
   },
   "description": "Build a photo gallery app that runs on iOS, Android, and the web - with just one codebase."

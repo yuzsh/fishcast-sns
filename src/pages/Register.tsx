@@ -35,8 +35,7 @@ const Register: React.FC = () => {
       <IonContent>
 			<IonGrid>
 				<IonRow class="ion-justify-content-center">
-				<IonCol size="1"></IonCol>
-        <IonCol　size="6">
+        <IonCol size-sm="10" size-md="6">
 					<IonCard class="card_padding">
 					<IonList>
 						<IonItem class="card_contents_vmargin">
@@ -63,7 +62,6 @@ const Register: React.FC = () => {
 					</IonList>
 					</IonCard>
 				</IonCol>
-				<IonCol size="1"></IonCol>
 				</IonRow>
 			</IonGrid>
       </IonContent>
