@@ -11,7 +11,7 @@ const Submit: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Photo Gallery</IonTitle>
+          <IonTitle>登録</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>

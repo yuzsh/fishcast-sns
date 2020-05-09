@@ -1,0 +1,22 @@
+[debug] [2020-05-09T00:11:12.492Z] ----------------------------------------------------------------------
+[debug] [2020-05-09T00:11:12.494Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ffmsdazuma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-09T00:11:12.494Z] CLI Version:   8.2.0
+[debug] [2020-05-09T00:11:12.494Z] Platform:      win32
+[debug] [2020-05-09T00:11:12.494Z] Node Version:  v12.16.3
+[debug] [2020-05-09T00:11:12.495Z] Time:          Sat May 09 2020 09:11:12 GMT+0900 (GMT+09:00)
+[debug] [2020-05-09T00:11:12.495Z] ----------------------------------------------------------------------
+[debug] [2020-05-09T00:11:12.496Z] 
+[debug] [2020-05-09T00:11:12.503Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-09T00:11:12.504Z] > authorizing via signed-in user
+[debug] [2020-05-09T00:11:12.504Z] [iam] checking project fishcast-sns for permissions ["firebase.projects.get"]
+[debug] [2020-05-09T00:11:12.507Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fishcast-sns:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-09T00:11:13.445Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 May 2020 00:11:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=655","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-09T00:11:13.447Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fishcast-sns  
+ 
+[debug] [2020-05-09T00:11:14.224Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 May 2020 00:11:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\ffmsdazuma\IonicWorkspace\FishcastSns'...
+[info] 
+[debug] [2020-05-09T00:11:14.231Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fishcast-sns/webApps/-/config  
+ 

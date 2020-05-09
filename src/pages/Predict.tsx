@@ -8,7 +8,7 @@ const Predict: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>予測</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
